@@ -52,6 +52,7 @@ Future expansions could include nested inline, syntax highlighting, multi-page b
 
 ### Project Structure
 
+```text
 static-site-generator-python/
 ├── content/                    # All .md files go here
 │   └── index.md
@@ -70,7 +71,7 @@ static-site-generator-python/
 ├── .gitignore
 ├── main.sh                     # Build + serve script
 └── README.md
-
+```
 
 ### How to Run Locally
 
