@@ -7,7 +7,7 @@ This project parses Markdown files, converts them into structured HTML nodes, ap
 ### Features
 
 - Block-level parsing: paragraphs, headings (h1–h6), code blocks, quotes, ordered & unordered lists
-- Inline Markdown support: `**bold**`, `_italic_`, ` ``code`` `, `[links](url)`, `![images](url)`
+- Inline Markdown support: `**bold**`, `_italic_`, `` `code` ``, `[links](url)`, `![images](url)`
 - Inline parsing inside paragraphs, headings, quotes, and list items
 - Code blocks preserve raw formatting and newlines (no inline parsing inside `<pre><code>`)
 - Dynamic heading levels (`h1` to `h6` based on number of `#`)
@@ -29,10 +29,10 @@ This generator is intentionally minimal and follows course restrictions:
 
 - **Content directory (`content/`)**: Only `.md` (Markdown) files are processed. No other file types (images, CSS, JS, PDFs, etc.) are copied or handled from `content/` or its subdirectories. All non-Markdown files in `content/` are ignored.
 - **Static assets**: Only files in the `static/` directory are copied to `docs/` (images, CSS, JS, etc.). No filtering by extension — everything in `static/` is copied as-is.
-- **Inline Markdown parsing** (`**bold**`, `*italic*`, `` `code` ``, `[links](url)`, `![images](url)`):
+- **Inline Markdown parsing** (`**bold**`, `_italic_`, `` `code` ``, `[links](url)`, `![images](url)`):
   - Fully supported inside **paragraphs**, **headings**, **quotes**, and **list items**.
   - **Not** supported inside **code blocks** (content is preserved raw, including markup).
-- **Nested inline markup** is **not supported** (e.g. `**bold *italic* inside**` will not properly nest; the first delimiter type wins).
+- **Nested inline markup** is **not supported** (e.g. `**bold _italic_ inside**` will not properly nest; the first delimiter type wins).
 - **Block types**:
   - Headings: 1–6 levels (`#` to `######`), with proper `<h1>`–`<h6>` tags.
   - Code blocks: `<pre><code>...</code></pre>`, raw content preserved (newlines/whitespace intact), no language class or syntax highlighting.
