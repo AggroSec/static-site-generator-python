@@ -82,8 +82,8 @@ static-site-generator-python/
    ```
    This runs:
 
-python3 src/main.py (copies static files + generates HTML pages)
-starts a local server: cd docs && python3 -m http.server 8888
+	python3 src/main.py (copies static files + generates HTML pages)
+	starts a local server: cd docs && python3 -m http.server 8888
 
 
 2. **View locally**
