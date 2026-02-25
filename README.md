@@ -27,7 +27,7 @@ https://aggrosec.github.io/static-site-generator-python/
 
 This generator is intentionally minimal and follows course restrictions:
 
-- **Content directory (`content/`)**: Only `.md` (Markdown) files are processed. No other file types (images, CSS, JS, PDFs, etc.) are copied or handled from `content/` or its subdirectories. All non-Markdown files in `content/` are ignored.
+- **Content directory (`content/`)**: Only `.md` (Markdown) files are processed. No other file types (images, CSS, JS, PDFs, etc.) are handled from `content/` or its subdirectories. All non-Markdown files in `content/` will not work in the conversion. Use static to copy over images and the like.
 - **Static assets**: Only files in the `static/` directory are copied to `docs/` (images, CSS, JS, etc.). No filtering by extension — everything in `static/` is copied as-is.
 - **Inline Markdown parsing** (`**bold**`, `_italic_`, `` `code` ``, `[links](url)`, `![images](url)`):
   - Fully supported inside **paragraphs**, **headings**, **quotes**, and **list items**.
